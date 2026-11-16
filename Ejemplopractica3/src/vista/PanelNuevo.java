@@ -56,6 +56,7 @@ public class PanelNuevo extends javax.swing.JPanel {
         lblError = new javax.swing.JLabel();
         btbGuardar = new javax.swing.JButton();
         btnLimpiar = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         jLabel1.setText("Número:");
 
@@ -65,10 +66,13 @@ public class PanelNuevo extends javax.swing.JPanel {
 
         jLabel4.setText("Fecha nac.(dd/mm/aaaa):");
 
+        txtNumero.setForeground(java.awt.Color.blue);
         txtNumero.setText("jTextField1");
         txtNumero.addActionListener(this::txtNumeroActionPerformed);
 
+        txtNombre.setForeground(java.awt.Color.red);
         txtNombre.setText("jTextField2");
+        txtNombre.addActionListener(this::txtNombreActionPerformed);
 
         txtPuntos.setText("jTextField3");
 
@@ -79,6 +83,10 @@ public class PanelNuevo extends javax.swing.JPanel {
 
         btnLimpiar.setText("Limpiar");
         btnLimpiar.addActionListener(this::btnLimpiarActionPerformed);
+
+        jButton1.setBackground(java.awt.Color.red);
+        jButton1.setForeground(java.awt.Color.white);
+        jButton1.setText("COLOR");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -107,7 +115,9 @@ public class PanelNuevo extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btbGuardar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnLimpiar)))
+                        .addComponent(btnLimpiar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton1)))
                 .addGap(0, 141, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -133,7 +143,8 @@ public class PanelNuevo extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 165, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btbGuardar)
-                    .addComponent(btnLimpiar)))
+                    .addComponent(btnLimpiar)
+                    .addComponent(jButton1)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -173,10 +184,15 @@ public class PanelNuevo extends javax.swing.JPanel {
         JOptionPane.showMessageDialog(this, "Cliente añadido correctamente.");
     }//GEN-LAST:event_btbGuardarActionPerformed
 
+    private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNombreActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btbGuardar;
     private javax.swing.JButton btnLimpiar;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
